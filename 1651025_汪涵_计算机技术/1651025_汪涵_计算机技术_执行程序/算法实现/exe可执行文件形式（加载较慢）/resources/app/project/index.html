@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>算法实现_二叉树_汪涵_1651025</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+
+<body>
+    <section class="hero is-dark">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">数据结构算法实现：二叉树</h1>
+                <h2 class="subtitle">汪涵 1651025</h2>
+            </div>
+        </div>
+    </section>
+    <div class="tile is-ancestor" style="margin: 10px 5px 10px 5px;">
+        <div class="tile is-4 is-vertical is-parent">
+            <div class="tile is-child box">
+                <div class="content">
+                    <h2>问题描述：</h2>
+                    <p>二叉树，完成</p>
+                    <ul>
+                        <li>建立一棵二叉树，并对它进行先序、中序、后序遍历</li>
+                        <li>统计树中的叶子结点个数</li>
+                        <li>分别对它进行先序、中序线索化</li>
+                        <li>实现先序、中序线索树的遍历</li>
+                        <li>显示该树和线索化后的树（此要求视情况完成）</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tile is-child box">
+                <div class="content">
+                    <h2>请输入二叉树的先序遍历</h2>
+                    <p><strong>注意：</strong>此处需要将缺少孩子节点的位置用#补上，例如只含一个结点a的先序遍历为a##</p>
+                </div>
+                <div class="field has-addons">
+                    <div class="control">
+                        <input class="input" type="text" name="preseq" id="getdata" placeholder="请输入先序遍历">
+                    </div>
+                    <div class="control">
+                        <input class="button is-dark" type="button" name="click1" value="确认输入" id="button1">
+                    </div>
+                </div>
+                <br>
+                <div class="content" id="leafnum"></div>
+            </div>
+        </div>
+        <div class="tile is-parent">
+            <div class="tile is-child box">
+                <div class="field has-addons">
+                    <div class="control is-expanded">
+                        <div class="select is-fullwidth">
+                            <select id="select">
+                                <option>选择遍历方式</option>
+                                <option>先序遍历</option>
+                                <option>中序遍历</option>
+                                <option>后序遍历</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <input class="button is-dark" type="button" name="click" value="开始遍历" id="button">
+                    </div>
+                </div>
+                <svg id="svg" width="600" height="600"></svg>
+                <div id="output"></div>
+            </div>
+        </div>
+    </div>
+    <div class="columns" style="margin: 10px 5px 10px 5px;">
+        <div class="column is-half">
+            <div class="box">
+                <button class="button is-dark" id="button2">先序线索化并遍历</button>
+                <br>
+                <div id="output1"></div>
+            </div>
+        </div>
+        <div class="column is-half">
+            <div class="box">
+                <button class="button is-dark" id="button3">中序线索化并遍历</button>
+                <br>
+                <div id="output2"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jQuery.js"></script>
+
+    <script type="text/javascript" src="js/BiTree.js"></script>
+
+    <script scr="js/helper.js"></script>
+
+</body>
+
+</html>

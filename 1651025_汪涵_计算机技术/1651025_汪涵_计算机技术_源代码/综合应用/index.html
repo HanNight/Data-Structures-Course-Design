@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>综合应用_社会网络_汪涵_1651025</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+
+<body>
+    <section class="hero is-dark">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">数据结构综合应用：社会网络</h1>
+                <h2 class="subtitle">汪涵 1651025</h2>
+            </div>
+        </div>
+    </section>
+
+    <div class="tile is-ancestor" style="margin: 10px 5px 10px 5px;">
+        <div class="tile is-4 is-vertical is-parent">
+            <div class="tile is-child box">
+                <div class="content">
+                    <h2>问题描述：</h2>
+                    <p>在某社会关系网络中，一个人属性包括所在地区、就读的各级学校、工作单位等，每一人有众多好友，并可以根据个人兴趣及社会活动加入到某些群组。现需设计一算法，从该社会关系网络中某一人出发，寻找其可能认识的人。例如根据两个人共同好友数量及所在群组情况，来发现可能认识的人；通过就读的学校情况发现可能认识的同学</p>
+                    <ul>
+                        <li>通过图形化界面，显示某一人的社会网络</li>
+                        <li>寻找某一人可能认识的人（不是其好友），并查看这些人与其关联度（共同好友数）</li>
+                        <li>根据可能认识的关联度对这些人进行排序</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tile is-child box">
+                <div class="content">
+                    <h2>添加一个人及其属性</h2>
+                </div>
+                <div class="field">
+                    <div class="field">
+                        <div class="control">
+                            姓&emsp;&emsp;名：<input class="input is-dark" type="text" placeholder="姓名" name="name" id="input1">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            所在地区：<input class="input is-dark" type="text" placeholder="所在地区" name="location" id="input2">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            小&emsp;&emsp;学：<input class="input is-dark" type="text" placeholder="小学" name="school1" id="input3">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            中&emsp;&emsp;学：<input class="input is-dark" type="text" placeholder="中学" name="school2" id="input4">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            大&emsp;&emsp;学：<input class="input is-dark" type="text" placeholder="大学" name="school3" id="input5">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            工作单位：<input class="input is-dark" type="text" placeholder="工作单位" name="workplace" id="input6">
+                        </div>
+                    </div>
+                    <div class="control">
+                        <input class="button is-dark" type="button" name="click1" value="添加" id="button1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tile is-parent">
+            <div class="tile is-child box">
+                <div class="content">
+                    <h2>社会关系网络</h2>
+                </div>
+                <svg width="800" height="800"></svg>
+            </div>
+        </div>
+    </div>
+    <div class="columns" style="margin: 10px 5px 10px 5px;">
+        <div class="column">
+            <div class="box">
+                <div class="content">
+                    <h2>寻找可能认识的人</h2>
+                </div>
+                <div class="field has-addons">
+                    <div class="control">
+                        <input class="input" type="text" name="name" id="input7" placeholder="请输入姓名">
+                    </div>
+                    <div class="control">
+                        <input class="button is-dark" type="button" name="click2" value="查找" id="button2">
+                    </div>
+                </div>
+                <div class="content" id="output"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/jQuery.js"></script>
+    <script src="js/SocialNetwork.js"></script>
+</body>
+
+</html>
