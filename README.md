@@ -15,3 +15,4 @@ In a social relationship network, a person's attributes include the region, the 
 - Find people (not their friends) that someone might know and see how they relate to them (the number of friends).
 - Sort these people based on the degree of association they may know.
 
+![iamge](https://github.com/HanNight/Data-Structures-Course-Design/blob/master/1651025_%E6%B1%AA%E6%B6%B5_%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8A%80%E6%9C%AF/%E8%BF%90%E8%A1%8C%E6%95%88%E6%9E%9C%E6%88%AA%E5%9B%BE%E7%AD%89/%E7%A4%BE%E4%BC%9A%E7%BD%91%E7%BB%9C1.gif)
